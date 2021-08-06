@@ -4,8 +4,7 @@ var inputAngle3 = document.querySelector("#input-angle3")
 var checkBtn = document.querySelector(".check")
 var divOutput = document.querySelector("#output");
 
-var baseLength = document.querySelector("base")
-var heightLength = document.querySelector("height")
+
 
 console.log(inputAngle1)
 console.log(inputAngle2)
