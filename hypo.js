@@ -8,9 +8,9 @@ console.log(heightLength)
 console.log(hypBtn)
 
 
-hypBtn.addEventListener('click', function findHypotenuse(){
+hypBtn.addEventListener('click', function findHypotenuse( a, b ) {
     console.log("clicked")
-    var hypoSqr = Number(baseLength.value)* Number(baseLength.value) + Number(heightLength.value)*Number(heightLength.value)
+    var hypoSqr = Number(baseLength.value)*Number(baseLength.value) + Number(heightLength.value)*Number(heightLength.value)
     var hypotenuse = Math.sqrt(hypoSqr)
     outputHypo.innerText = hypotenuse;
 })

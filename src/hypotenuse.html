@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="/main.css">
 </head>
 <body>
-    <a href="index.html">Go Back</a>
+    <a href="/index.html">Go Back</a>
     <h1>Enter the lengths of sides of right angle triangle</h1>
     <div class="container">
 
         <label for="base">base</label>
-        <input type="number" id="base">
+        <input type="number" min="0.0001" step="0.00001" id="base">
         <label for="height">height</label>
-        <input type="number" id="height">
+        <input type="number" id="height" min="0.0001" step="0.00001">
         <button id="check-hypo">submit</button>
         <h3>Hypotenuse will be calculated here:</h3>
         <div id="output-hypo"></div>
