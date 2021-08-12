@@ -6,7 +6,7 @@ const correctAnswers = ["30Â°", "Isosceles triangle", "Equlateral triangle", "âˆ
 outputDiv.style.display = "none";
 
 function checkScore(){
-    console.log("clicked");
+    outputDiv.style.display = "block";
     let score = 0;
     let index = 0;
     const formResults = new FormData(quizForm);
