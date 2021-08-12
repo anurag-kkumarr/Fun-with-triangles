@@ -4,15 +4,10 @@ var inputAngle3 = document.querySelector("#input-angle3")
 var checkBtn = document.querySelector(".check")
 var divOutput = document.querySelector("#output");
 
-
-
-console.log(inputAngle1)
-console.log(inputAngle2)
-console.log(inputAngle3)
-console.log(checkBtn)
-
+divOutput.style.display = "none";
 
 function checkTriangleSum(){
+    divOutput.style.display = "block";
     
     var triangleSum = Number(inputAngle1.value) + Number(inputAngle2.value)
      + Number(inputAngle3.value);

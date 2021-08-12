@@ -3,7 +3,7 @@ const checkBtn = document.querySelector("#check-btn");
 const outputDiv = document.querySelector("#output");
 
 const correctAnswers = ["30°", "Isosceles triangle", "Equlateral triangle", "√3/4*a²", "30cm", "acute-angled", "3", "180°", "60°", "80°"];
-
+outputDiv.style.display = "none";
 
 function checkScore(){
     console.log("clicked");
@@ -18,7 +18,6 @@ function checkScore(){
         index = index + 1;
     }
     outputDiv.innerText = "Your score is " + score;
-    //console.log(score);
-}
+    
 
 checkBtn.addEventListener('click', checkScore);

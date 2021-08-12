@@ -1,17 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap');
 
+:root {
+    --primary-color: darkblue;
+    --secondary-color: purple;
+}
+*{
+    font-family: 'Merriweather Sans', sans-serif;
+}
 
+h1 {
+    font-family: 'Merriweather Sans', sans-serif; 
+}
+
+body {
+    background-image:url("picture.jpg");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    
+}
 
 a {
     text-decoration: none;
     display: inline;
     padding: 0.5rem 1rem;
-    border: 0.1rem solid skyblue;
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     color: black;
+} 
 
+
+.class-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+    text-align: center;
 }
 .block {
     margin-bottom: 2rem;
     
 }
+.choice {
+    background-color: var(--secondary-color);
+    width: 100px;
+    height: 100px;
+    margin: 0.2rem 0.2rem 0.4rem;
+    padding: 1rem;
+
+    text-align: center;
+    display: flex;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    
+}
+
+.section {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    margin: 2rem 1rem;
+}
+.label {
+    font-weight: bold;
+}
+
+#input-angle1, #input-angle2, #input-angle3 {
+    background-color: lightblue;
+    padding: 0.5rem;
+    margin: 1rem 1rem 1.5rem 0.2rem;
+    height: 20px;
+    width: 50px;
+    overflow: scroll;
+}
+
+.check {
+    margin: auto;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100px;
+    height: 50px;
+
+    background-color: lightblue;
+    font-size: 1rem;
+    font-weight: 600;
+}
+#output {
+    padding: 1rem 2rem;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: fit-content;
+    border: 2px solid var(--primary-color);
+    background-color: lightblue;
+    color: yellow;
+}
+
+
