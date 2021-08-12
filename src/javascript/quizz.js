@@ -2,10 +2,6 @@ const quizForm = document.querySelector(".quiz-form");
 const checkBtn = document.querySelector("#check-btn");
 const outputDiv = document.querySelector("#output");
 
-console.log(quizForm);
-console.log(checkBtn);
-console.log(outputDiv);
-
 const correctAnswers = ["30°", "Isosceles triangle", "Equlateral triangle", "√3/4*a²", "30cm", "acute-angled", "3", "180°", "60°", "80°"];
 
 
