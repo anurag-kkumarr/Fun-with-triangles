@@ -67,6 +67,13 @@ a {
     color: black;
     
 }
+.heading{
+    color: blue;
+}
+h2{
+    color: blue;
+    text-decoration: underline;
+}
 
 .section {
     width: 100%;
@@ -74,9 +81,23 @@ a {
     text-align: center;
     margin: 2rem 1rem;
 }
-.label {
-    font-weight: bold;
+.quiz-form{
+    text-align: left;
 }
+.home{
+    padding-top: 5rem;
+    color: blue;
+}
+
+.question-container {
+    background-color: blue;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    white-space: normal;
+    color:white;
+}
+
 
 #input-angle1, #input-angle2, #input-angle3 {
     background-color: lightblue;
@@ -87,7 +108,7 @@ a {
     overflow: scroll;
 }
 
-.check {
+.check, #check-btn {
     margin: auto;
     display: block;
     margin-top: 2rem;
@@ -108,7 +129,7 @@ a {
     width: fit-content;
     border: 2px solid var(--primary-color);
     background-color: lightblue;
-    color: yellow;
+    color: black;
 }
 
 

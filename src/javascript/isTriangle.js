@@ -15,7 +15,7 @@ function checkTriangleSum(){
         divOutput.innerText = "Wohooo! These angle will make a triangle🔺"
     }
     else {
-        divOutput.innerText = "oh no! These angle didn't make a triangle😞" 
+        divOutput.innerText = "oh no! These angle doesn't make a triangle😞" 
     }
     console.log(triangleSum)
 }

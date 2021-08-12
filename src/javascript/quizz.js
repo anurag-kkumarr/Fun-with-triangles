@@ -18,6 +18,7 @@ function checkScore(){
         index = index + 1;
     }
     outputDiv.innerText = "Your score is " + score;
+}
     
 
 checkBtn.addEventListener('click', checkScore);
