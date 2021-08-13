@@ -81,10 +81,11 @@ h2{
     text-align: center;
     margin: 2rem 1rem;
 }
-.quiz-form{
+.quiz-form, .form{
     text-align: left;
 }
-.home{
+
+.home {
     padding-top: 5rem;
     color: blue;
 }
@@ -97,7 +98,9 @@ h2{
     white-space: normal;
     color:white;
 }
-
+.label-hyp {
+    padding: 0.5rem 0.5rem 1rem;
+}
 
 #input-angle1, #input-angle2, #input-angle3 {
     background-color: lightblue;
@@ -120,6 +123,19 @@ h2{
     font-size: 1rem;
     font-weight: 600;
 }
+.calculateArea {
+    display: block;
+}
+.radio input{
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    display: inline-block;
+}
+.radio {
+    margin-bottom: 1rem;
+}
+
+
 #output {
     padding: 1rem 2rem;
     display: block;
@@ -130,6 +146,10 @@ h2{
     border: 2px solid var(--primary-color);
     background-color: lightblue;
     color: black;
+}
+
+.show-area {
+    margin: 1rem 0.5rem;
 }
 
 

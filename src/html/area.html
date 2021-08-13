@@ -9,63 +9,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <a href="/index.html"><i class="fas fa-home fa-5x"></i></a>
-    <h1>Calculate Area</h1>
-    <h2>Select an option below as per the data you have for a triangle
-    </h2>
     <div class="container">
-        <form class="form">
-            <label for="calculateArea1"><input type="radio" class="calculateArea" name="option" >1.) If base and height of triangle is known</label>
-            <label for="calculateArea2"><input type="radio" class="calculateArea" name="option" >2.) If length of all 3 sides of a triangle is known</label>
-            <label for="calculateArea3"><input type="radio" class="calculateArea" name="option" >3.) If length of two sides of triangle and angle including them are known</label>
-            <label for="calculateArea4"><input type="radio" class="calculateArea" name="option">1.) If triangle is an equilateral triangle</label>
-        </form> 
+        <section class="section">
 
-        <div class="calculateAreaBlock">
-                <label for="input-option1">base =<input type="number" class="input-option1">
+            <a href="/index.html"><i class="fas fa-home fa-5x"></i></a>
+            <h1>Calculate Area</h1>
+            <h2>Select an option below as per the data you have for a triangle
+            </h2>
+            
+                <form class="form">
+                    <div class="radio">
+                        <label for="calculateArea" class="label-area"><input type="radio" class="calculateArea" name="option" >If base and height of triangle is known</label>
+                    </div> 
+                    <div class="radio">  
+                        <label for="calculateArea" class="label-area"><input type="radio" class="calculateArea" name="option" >If length of all 3 sides of a triangle is known</label>
+                    </div>
+                    <div class="radio">
+                        <label for="calculateArea" class="label-area"><input type="radio" class="calculateArea" name="option" >If length of two sides of triangle and angle including them are known</label>
+                    </div>
+                    <div class="radio">
+                        <label for="calculateArea" class="label-area"><input type="radio" class="calculateArea" name="option">If triangle is an equilateral triangle</label>
+                    </div>
+                </form> 
 
-                </label><label for="input-option1">height =<input type="number" class="input-option1"></label>
+                <div class="calculateAreaBlock">
+                        <label for="input-option1">base =<input type="number" class="input-option1">
 
-                <button id="area-btn1">submit</button>
-                
-                <div class="show-area">1/2*base*height</div>
-        </div>
-        <div class="calculateAreaBlock">
-            <label for="input-option2" class="label">side1 = 
-                <input type="number" class="input-option2">
-            </label>
-            <label for="input-option2" class="label"> side2 =  
-                <input type="number" class="input-option2">
-            </label>
-            <label for="input-option2" class="label"> side3 =  
-                <input type="number" class="input-option2">
-            </label>
-            <button id="area-btn2">submit</button>
+                        </label><label for="input-option1">height =<input type="number" class="input-option1"></label>
 
-            <div class="show-area">√s*(s-a)*(s-b)*(s-c)</div>
-        </div>
+                        <button id="area-btn1">submit</button>
+                        
+                        <div class="show-area">The area of triangle is 1/2*base*height</div>
+                </div>
+                <div class="calculateAreaBlock">
+                    <label for="input-option2" class="label">side1 = 
+                        <input type="number" class="input-option2">
+                    </label>
+                    <label for="input-option2" class="label"> side2 =  
+                        <input type="number" class="input-option2">
+                    </label>
+                    <label for="input-option2" class="label"> side3 =  
+                        <input type="number" class="input-option2">
+                    </label>
+                    <button id="area-btn2">submit</button>
 
-        <div class="calculateAreaBlock">
-            <label for="input-option3" class="label"> side1 = 
-                <input type="number" class="input-option3">
-            </label>
-            <label for="input-option3" class="label"> side2 = 
-                <input type="number" class="input-option3">
-            </label>
-            <label for="input-option3" class="label"> included Angle = <input type="number" class="input-option3" min="0" max="180" required></label>
-            <button id="area-btn3">submit</button>
+                    <div class="show-area"> The area of triangle is √s*(s-a)*(s-b)*(s-c)</div>
+                </div>
 
-            <div class="show-area">1/2*a*b*sin A</div>
-        </div>
+                <div class="calculateAreaBlock">
+                    <label for="input-option3" class="label"> side1 = 
+                        <input type="number" class="input-option3">
+                    </label>
+                    <label for="input-option3" class="label"> side2 = 
+                        <input type="number" class="input-option3">
+                    </label>
+                    <label for="input-option3" class="label"> included Angle = <input type="number" class="input-option3" min="0" max="180" required></label>
+                    <button id="area-btn3">submit</button>
 
-        <div class="calculateAreaBlock">
-            <label for="input-option4" class="label">a= <input type="number" class="input-option4"></label>
-            <button id="area-btn4">submit</button>
-            <div class="show-area">√3/4*(a)²</div>
+                    <div class="show-area">The area formula is 1/2*a*b*sin A</div>
+                </div>
 
-        </div>
+                <div class="calculateAreaBlock">
+                    <label for="input-option4" class="label">a= <input type="number" class="input-option4"></label>
+                    <button id="area-btn4">submit</button>
+                    <div class="show-area">Area of Equilateral triangle is √3/4*(a)²</div>
 
+                </div>
 
+            </section>
 
     </div>
     

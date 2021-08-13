@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <a href="/index.html"><i class="fas fa-home fa-5x"></i></a>
-    <h1>Enter the lengths of sides of right angle triangle</h1>
     <div class="container">
-
-        <label for="base">base</label>
-        <input type="number" min="0.0001" step="0.00001" id="base">
-        <label for="height">height</label>
-        <input type="number" id="height" min="0.0001" step="0.00001">
-        <button id="check-hypo">submit</button>
-        <h3>Hypotenuse will be calculated here:</h3>
-        <div id="output-hypo"></div>
+        <section>
+            <a href="/index.html"><i class="fas fa-home fa-5x"></i></a>
+            <h1>Enter the lengths of sides of right angle triangle</h1>
+            <label for="base" class="label-hyp">base (in cm) </label>
+            <input type="number" min="0.0001" step="0.00001" id="base">
+            <label for="height" class="label-hyp">height (in cm) </label>
+            <input type="number" id="height" min="0.0001" step="0.00001">
+            <button id="check-hypo">submit</button>
+            <h3>Hypotenuse will be calculated here:</h3>
+            <div id="output-hypo"></div>
+        </section>
     </div>
     
     <script src="/src/javascript/hypo.js" type="text/javascript"></script>

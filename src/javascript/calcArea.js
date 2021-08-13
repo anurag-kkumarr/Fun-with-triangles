@@ -43,7 +43,7 @@ areaBtn1.addEventListener('click', (e)=>{
     console.log("clicked");
     const baseLength = Number(inputOption1[0].value);
     const heightLength = Number(inputOption1[1].value);
-    showArea[0].innerText = (baseLength*heightLength)/2;
+    showArea[0].innerText = "The area of Triangle is " + (baseLength*heightLength)/2 + " cm²";
 })
 
 areaBtn2.addEventListener('click',()=>{
@@ -52,18 +52,24 @@ areaBtn2.addEventListener('click',()=>{
     const side3 = Number(inputOption2[2].value);
     const semiPerimeter = (side1 + side2 + side3)/2;
 
-    const areaTriangle = Math.sqrt(semiPerimeter*(semiPerimeter - side1)*(semiPerimeter-side2)*(semiPerimeter-side3));
-    showArea[1].innerText = areaTriangle;
+    if(side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2){
+        const areaTriangle = Math.sqrt(semiPerimeter*(semiPerimeter - side1)*(semiPerimeter-side2)*(semiPerimeter-side3));
+        showArea[1].innerText = "The area of Triangle is "+ areaTriangle + " cm²";
+    }
+    else {
+        showArea[1].innerText = "The triangle is not possible with these three sides."
+    }
+    
 })
 
 areaBtn3.addEventListener('click',()=>{
     const len1 = Number(inputOption3[0].value);
     const len2 = Number(inputOption3[1].value);
     const angle1 = Number(inputOption3[2].value);
-    showArea[2].innerText = (len1*len2* Math.sin(angle1* Math.PI/180))/2;
+    showArea[2].innerText = "The area of Triangle is " + (len1*len2* Math.sin(angle1* Math.PI/180))/2 + " cm²";
 })
 
 areaBtn4.addEventListener('click',()=>{
     const a= Number(inputOption4.value);
-    showArea[3].innerText = (Math.sqrt(3)*a*a)/4;
+    showArea[3].innerText = "The area of Triangle is  " + (Math.sqrt(3)*a*a)/4 + " cm²";
 })
