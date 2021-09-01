@@ -8,16 +8,22 @@ divOutput.style.display = "none";
 
 function checkTriangleSum(){
     divOutput.style.display = "block";
-    
-    var triangleSum = Number(inputAngle1.value) + Number(inputAngle2.value)
-     + Number(inputAngle3.value);
-    if(triangleSum === 180){
-        divOutput.innerText = "Wohooo! These angle will make a triangle🔺"
+    if(inputAngle1.value === "" || inputAngle2.value === "" || inputAngle3.value ===""){
+        divOutput.innerText = "Please fill the Box to proceed";
     }
-    else {
-        divOutput.innerText = "oh no! These angle doesn't make a triangle😞" 
+    else if(Number(inputAngle1.value) < 0 || Number(inputAngle2.value) < 0 || Number(inputAngle3.value) < 0){
+        divOutput.innerText = "Enter valid angle";
     }
-    console.log(triangleSum)
+    else { 
+        var triangleSum = Number(inputAngle1.value) + Number(inputAngle2.value)
+        + Number(inputAngle3.value);
+        if(triangleSum === 180){
+            divOutput.innerText = "Wohooo! These angle will make a triangle🔺"
+        }
+        else {
+            divOutput.innerText = "oh no! These angle doesn't make a triangle😞" 
+        }
+    }
 }
 
-checkBtn.addEventListener('click', checkTriangleSum)
+checkBtn.addEventListener('click', checkTriangleSum);
