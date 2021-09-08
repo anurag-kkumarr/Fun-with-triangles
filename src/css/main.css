@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: darkblue;
-    --secondary-color: pink;
+    --secondary-color: crimson;
 }
 *{
     font-family: 'Merriweather Sans', sans-serif;
@@ -15,7 +15,7 @@ h1 {
 }
 
 body {
-    background-image:url("picture.jpg");
+    background-color: pink;
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
@@ -113,7 +113,6 @@ h2{
 }
 
 #input-angle1, #input-angle2, #input-angle3 {
-    background-color: pink;
     padding: 0.5rem;
     margin: 1rem 1rem 1.5rem 0.2rem;
     height: 20px;
@@ -130,7 +129,7 @@ h2{
     height: 50px;
     cursor: pointer;
 
-    background-color: pink;
+    background-color: var(--secondary-color);
     font-size: 1rem;
     font-weight: 600;
 }
