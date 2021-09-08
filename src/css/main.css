@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: darkblue;
-    --secondary-color: purple;
+    --secondary-color: pink;
 }
 *{
     font-family: 'Merriweather Sans', sans-serif;
@@ -21,6 +21,14 @@ body {
     margin: 0;
     
 }
+.navigation {
+    background-color: var(--secondary-color);
+    padding: 1rem; 
+}
+.nav-top {
+    text-align: right;
+    padding-inline-start: 0px;
+}
 
 a {
     text-decoration: none;
@@ -30,7 +38,9 @@ a {
     margin-bottom: 0.5rem;
     color: black;
 } 
-
+.list-item-inline {
+    display: inline;
+}
 
 .class-container {
     display: flex;
@@ -91,19 +101,19 @@ h2{
 }
 
 .question-container {
-    background-color: blue;
+    background-color: crimson;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     white-space: normal;
-    color:white;
+    color: white;
 }
 .label-hyp {
     padding: 0.5rem 0.5rem 1rem;
 }
 
 #input-angle1, #input-angle2, #input-angle3 {
-    background-color: lightblue;
+    background-color: pink;
     padding: 0.5rem;
     margin: 1rem 1rem 1.5rem 0.2rem;
     height: 20px;
@@ -120,7 +130,7 @@ h2{
     height: 50px;
     cursor: pointer;
 
-    background-color: lightblue;
+    background-color: pink;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -145,12 +155,32 @@ h2{
     font-size: 1.2rem;
     width: fit-content;
     border: 2px solid var(--primary-color);
-    background-color: lightblue;
+    background-color: pink;
     color: black;
 }
 
 .show-area {
     margin: 1rem 0.5rem;
+}
+footer {
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem 0.2rem;
+    justify-content: center;
+    
+    
+}
+
+.list-no-bullet {
+    list-style-type: none;
+    
+}
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline-start: 0px;
+    
 }
 
 
