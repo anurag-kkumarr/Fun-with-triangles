@@ -157,6 +157,9 @@ h2{
     background-color: pink;
     color: black;
 }
+#output-hypo {
+    color: var(--secondary-color);
+}
 
 .show-area {
     margin: 1rem 0.5rem;

@@ -3,14 +3,16 @@ var heightLength = document.querySelector("#height")
 var hypBtn = document.querySelector("#check-hypo")
 var outputHypo = document.querySelector("#output-hypo")
 
-console.log(baseLength)
-console.log(heightLength)
-console.log(hypBtn)
 
-
-hypBtn.addEventListener('click', function findHypotenuse( a, b ) {
-    console.log("clicked")
-    var hypoSqr = Number(baseLength.value)*Number(baseLength.value) + Number(heightLength.value)*Number(heightLength.value)
-    var hypotenuse = Math.sqrt(hypoSqr)
-    outputHypo.innerText = hypotenuse + " cm";
+hypBtn.addEventListener('click', function findHypotenuse() {
+    var base = Number(baseLength.value);
+    var height = Number(heightLength.value);
+    if(base>0 && height>0){
+        var hypoSqr = base*base + height*height;
+        var hypotenuse = Math.sqrt(hypoSqr);
+        outputHypo.innerText = hypotenuse + " cm";
+    }
+    else {
+        outputHypo.innerText = "Please enter correct length";
+    }
 })

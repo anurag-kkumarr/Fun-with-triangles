@@ -40,7 +40,6 @@ function showOrHideBlock(block, showIndex1, hidIndex1, hidIndex2, hidIndex3){
 
 areaBtn1.addEventListener('click', (e)=>{
     e.preventDefault();
-    console.log("clicked");
     const baseLength = Number(inputOption1[0].value);
     const heightLength = Number(inputOption1[1].value);
     showArea[0].innerText = "The area of Triangle is " + (baseLength*heightLength)/2 + " cm²";
