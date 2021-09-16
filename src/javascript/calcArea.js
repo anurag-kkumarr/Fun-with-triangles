@@ -46,7 +46,8 @@ areaBtn1.addEventListener('click', (e)=>{
         showArea[0].innerText = "Fill the box to proceed ";
     }
     else if(baseLength>0 && heightLength>0){
-        showArea[0].innerText = "The area of Triangle is " + (baseLength*heightLength)/2 + " cm²";
+        let areaRight = (baseLength*heightLength)/2;
+        showArea[0].innerText = "The area of Triangle is " +  areaRight.toFixed(2) + " cm²";
     }
     else {
         showArea[0].innerText = "Enter valid length of sides of triangle";
@@ -65,7 +66,7 @@ areaBtn2.addEventListener('click',()=>{
     else if(side1>0 && side2>0 && side3>0){
         if(side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2){
             const areaTriangle = Math.sqrt(semiPerimeter*(semiPerimeter - side1)*(semiPerimeter-side2)*(semiPerimeter-side3));
-            showArea[1].innerText = "The area of Triangle is "+ areaTriangle + " cm²";
+            showArea[1].innerText = "The area of Triangle is "+ areaTriangle.toFixed(2) + " cm²";
         }
         else {
             showArea[1].innerText = "The triangle is not possible with these three sides."
@@ -85,7 +86,8 @@ areaBtn3.addEventListener('click',()=>{
         showArea[2].innerText = "Fill the box to proceed ";
     }
     else if(len1>0 && len2>0 && angle1>0){
-        showArea[2].innerText = "The area of Triangle is " + (len1*len2* Math.sin(angle1* Math.PI/180))/2 + " cm²";
+        var areaIncl = (len1*len2* Math.sin(angle1* Math.PI/180))/2;
+        showArea[2].innerText = "The area of Triangle is " + areaIncl.toFixed(2) + " cm²";
     }
     else {
         showArea[2].innerText = "Enter valid length of sides or angles of triangle";
@@ -99,7 +101,8 @@ areaBtn4.addEventListener('click',()=>{
         showArea[3].innerText = "Fill the box to proceed ";
     }
     else if(a>0){
-        showArea[3].innerText = "The area of Triangle is  " + (Math.sqrt(3)*a*a)/4 + " cm²";
+        var areaEquil = (Math.sqrt(3)*a*a)/4;
+        showArea[3].innerText = "The area of Triangle is  " + areaEquil.toFixed(2) + " cm²";
     }
     else {
         showArea[3].innerText = "Enter valid length of sides of triangle";

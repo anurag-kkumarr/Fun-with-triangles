@@ -13,7 +13,7 @@ hypBtn.addEventListener('click', function findHypotenuse() {
     else if(base>0 && height>0){
         var hypoSqr = base*base + height*height;
         var hypotenuse = Math.sqrt(hypoSqr);
-        outputHypo.innerText = hypotenuse + " cm";
+        outputHypo.innerText = hypotenuse.toFixed(2) + " cm";
     }
     else {
         outputHypo.innerText = "Please enter correct length";
